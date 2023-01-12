@@ -105,10 +105,10 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 6rem;
   background: rgba(16, 24, 60, 0.8);
   border-radius: 1.2rem;
-  padding: 1.3rem 1.8rem;
+  padding: 1.3rem 4rem;
 }
 .display-info-segment .display-info-first-content {
   display: flex;
@@ -137,4 +137,23 @@ body {
 .display-info-segment .display-info-first-content .display-info-upper-info .joined-date {
   color: #364fc7;
   margin-left: 1rem;
+}
+.display-info-segment .display-info-second-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.display-info-segment .display-info-second-content .display-info-profile-about {
+  font-weight: 300;
+  letter-spacing: 0.16rem;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+.display-info-segment .display-info-third-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #050814;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
 }/*# sourceMappingURL=main.css.map */
