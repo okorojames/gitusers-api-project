@@ -16,6 +16,9 @@ html{
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
+img{
+  width: 100%;
+}
 body{
   background: $dark-two;
   color: $pre-primary;
@@ -59,6 +62,7 @@ body{
     background: rgba($primary, $alpha: 0.15);
     padding: .8rem 1.6rem;
     border-radius: .8rem;
+    margin-bottom: 5rem;
     & .search-icon{
   height: 34px;
   width: 34px;
@@ -94,6 +98,29 @@ body{
       box-shadow: 0 0 0 .15rem $primary;
       background: transparent;
       color: $primary;
+    }
+  }
+}
+// 
+// 
+// 
+.display-info-segment{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba($dark-three, 0.8);
+  border-radius: 1.2rem;
+  padding: 1.3rem 1.8rem;
+  & .display-info-first-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-left: -400px;
+    & .display-info-image{
+      width: 120px;
+      border-radius: 50%;
     }
   }
 }
