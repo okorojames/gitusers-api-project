@@ -23,8 +23,9 @@ body{
   transition: all .6s ease-in-out;
 }
 .app-wrap{
-  background: $dark-three;
-  width: 60%;
+  background: $dark-two;
+  box-shadow: 0 .2rem 1rem $dark-three;
+  width: 80%;
   margin: 0 auto;
   border-radius: 1rem;
   margin-top: 3rem;
@@ -34,15 +35,41 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.light--mode{
+  margin-bottom: 5rem;
+  & .light--mode{
   fill: $pre-primary;
   cursor: pointer;
   transition: all .5s ease-in-out;
 }
-.dark--mode{
+  & .dark--mode{
   fill: $pre-primary;
   cursor: pointer;
   transition: all .5s ease-in-out;
   display: none;
+}
+}
+.container{
+  margin: 0 auto;
+  width:70%;
+  & .search-segment{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    background: rgba($primary, $alpha: 0.15);
+    padding: .8rem 1.6rem;
+    border-radius: .8rem;
+    & .search-icon{
+  height: 34px;
+  width: 34px;
+  stroke: $primary;
+  }
+    & form{
+      width: 100%;
+       & .search-input{
+      padding: .8rem .5rem;
+      width: 100%;
+  }
+    }
+  }
 }

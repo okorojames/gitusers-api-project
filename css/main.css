@@ -19,8 +19,9 @@ body {
 }
 
 .app-wrap {
-  background: #10183c;
-  width: 60%;
+  background: #050814;
+  box-shadow: 0 0.2rem 1rem #10183c;
+  width: 80%;
   margin: 0 auto;
   border-radius: 1rem;
   margin-top: 3rem;
@@ -31,17 +32,42 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5rem;
 }
-
-.light--mode {
+.app-nav .light--mode {
   fill: #edf2ff;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-
-.dark--mode {
+.app-nav .dark--mode {
   fill: #edf2ff;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   display: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+.container .search-segment {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  background: rgba(54, 79, 199, 0.15);
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+}
+.container .search-segment .search-icon {
+  height: 34px;
+  width: 34px;
+  stroke: #364fc7;
+}
+.container .search-segment form {
+  width: 100%;
+}
+.container .search-segment form .search-input {
+  padding: 0.8rem 0.5rem;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
