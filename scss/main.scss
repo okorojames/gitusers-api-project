@@ -12,7 +12,30 @@ $dark-three: #10183c;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
 body{
   background: $dark-two;
   color: $pre-primary;
+  font-size: 1.8rem;
+}
+.app-wrap{
+  background: $dark-three;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  padding: 1.5rem 1.5rem;
+}
+.light--mode{
+  fill: $pre-primary;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.dark--mode{
+  fill: $pre-primary;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
 }

@@ -6,7 +6,34 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
 body {
   background: #050814;
   color: #edf2ff;
+  font-size: 1.8rem;
+}
+
+.app-wrap {
+  background: #10183c;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  padding: 1.5rem 1.5rem;
+}
+
+.light--mode {
+  fill: #edf2ff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.dark--mode {
+  fill: #edf2ff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
