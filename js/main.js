@@ -16,3 +16,25 @@ darkMode.addEventListener('click', function () {
   body.style.background = '#050814'
   appWrap.classList.remove('darkIt')
 })
+//
+// working on the functions
+// 
+const searchBtn = document.querySelector('.search-btn')
+searchBtn.addEventListener('click', addInfoDetails)
+// 
+// 
+function addInfoDetails() {
+  //
+  // VARIABLES
+  // 
+  const searchInput = document.querySelector('.search-input').value.trim();
+  //
+  // PROGRAMS
+  if (searchInput === '') {
+    alert('Enter username')
+    document.querySelector('.search-input').value = '';
+  } else {
+    console.log(searchInput)
+    document.querySelector('.search-input').value = '';
+  }
+}
