@@ -54,7 +54,7 @@ body{
   & .search-segment{
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     background: rgba($primary, $alpha: 0.15);
     padding: .8rem 1.6rem;
@@ -69,7 +69,31 @@ body{
        & .search-input{
       padding: .8rem .5rem;
       width: 100%;
-  }
+      background: transparent;
+      outline: none;
+      border: none;
+      font-size: 1.6rem;
+      color: $pre-primary;
+    }
+          & .search-input::-webkit-input-placeholder{
+        color: $pre-primary;
+      }
+    }
+    & .search-btn{
+      padding: 1rem 1.8rem;
+      border-radius: 1rem;
+      transition: all .4s ease-in-out;
+      background: $primary;
+      color: $pre-primary;
+      font-size: 1.5rem;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    & .search-btn:hover,.search-btn:active{
+      box-shadow: 0 0 0 .15rem $primary;
+      background: transparent;
+      color: $primary;
     }
   }
 }

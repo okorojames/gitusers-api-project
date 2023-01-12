@@ -53,7 +53,7 @@ body {
 .container .search-segment {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   background: rgba(54, 79, 199, 0.15);
   padding: 0.8rem 1.6rem;
@@ -70,4 +70,28 @@ body {
 .container .search-segment form .search-input {
   padding: 0.8rem 0.5rem;
   width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #edf2ff;
+}
+.container .search-segment form .search-input::-webkit-input-placeholder {
+  color: #edf2ff;
+}
+.container .search-segment .search-btn {
+  padding: 1rem 1.8rem;
+  border-radius: 1rem;
+  transition: all 0.4s ease-in-out;
+  background: #364fc7;
+  color: #edf2ff;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.container .search-segment .search-btn:hover, .container .search-segment .search-btn:active {
+  box-shadow: 0 0 0 0.15rem #364fc7;
+  background: transparent;
+  color: #364fc7;
 }/*# sourceMappingURL=main.css.map */
