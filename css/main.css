@@ -112,12 +112,29 @@ body {
 }
 .display-info-segment .display-info-first-content {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 5rem;
-  margin-left: -400px;
+  margin-left: 2rem;
 }
 .display-info-segment .display-info-first-content .display-info-image {
   width: 120px;
   border-radius: 50%;
+}
+.display-info-segment .display-info-first-content .display-info-upper-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.display-info-segment .display-info-first-content .display-info-upper-info .display-info-name {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.display-info-segment .display-info-first-content .display-info-upper-info .display-info-username {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #364fc7;
+}
+.display-info-segment .display-info-first-content .display-info-upper-info .joined-date {
+  color: #364fc7;
+  margin-left: 1rem;
 }/*# sourceMappingURL=main.css.map */

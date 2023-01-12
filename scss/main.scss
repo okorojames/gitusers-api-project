@@ -114,13 +114,30 @@ body{
   padding: 1.3rem 1.8rem;
   & .display-info-first-content{
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 5rem;
-    margin-left: -400px;
+    margin-left: 2rem;
     & .display-info-image{
       width: 120px;
       border-radius: 50%;
+    }
+    & .display-info-upper-info{
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      & .display-info-name{
+        font-size: 3rem;
+        font-weight: 600;
+      }
+      & .display-info-username{
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: $primary;
+      }
+      & .joined-date{
+        color: $primary;
+        margin-left: 1rem;
+      }
     }
   }
 }
