@@ -195,6 +195,6 @@ body {
 }
 
 .darkIt {
-  box-shadow: 0 0 0 0.2rem #050814;
-  background: transparent;
+  box-shadow: 0 0 0 0.3rem #0b1028;
+  background: rgba(16, 24, 60, 0.6);
 }/*# sourceMappingURL=main.css.map */

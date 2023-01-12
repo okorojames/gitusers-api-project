@@ -201,6 +201,6 @@ body{
   text-align: center;
 }
 .darkIt{
-  box-shadow: 0 0 0 .2rem $dark-two;
-  background: transparent;
+  box-shadow: 0 0 0 .3rem $dark-one;
+  background: rgba($dark-three, .6);
 }
