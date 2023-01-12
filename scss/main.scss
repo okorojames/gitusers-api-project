@@ -24,6 +24,7 @@ body{
   color: $pre-primary;
   font-size: 1.8rem;
   transition: all .6s ease-in-out;
+  padding: 5rem 0;
 }
 .app-wrap{
   background: $dark-two;
@@ -163,4 +164,43 @@ body{
     border-radius: 1rem;
     padding: 1.5rem 2rem;
   }
+  // 
+  // 
+  & .display-info-fourth-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    & .profile-link{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      & .profile--link a:link, & .profile--link a:visited{
+        color: $primary;
+        text-decoration: none;
+        letter-spacing: .2rem;
+      }
+    }
+    & .builder-copyRight{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: .9rem;
+      & .copyRight{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $primary;
+      }
+    }
+  }
+}
+.follower,.repo,.following{
+  opacity: .4;
+}
+.followers,.repos,.followings{
+  text-align: center;
+}
+.darkIt{
+  box-shadow: 0 0 0 .2rem $dark-two;
+  background: transparent;
 }

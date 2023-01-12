@@ -20,6 +20,7 @@ body {
   color: #edf2ff;
   font-size: 1.8rem;
   transition: all 0.6s ease-in-out;
+  padding: 5rem 0;
 }
 
 .app-wrap {
@@ -156,4 +157,44 @@ body {
   background: #050814;
   border-radius: 1rem;
   padding: 1.5rem 2rem;
+}
+.display-info-segment .display-info-fourth-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.display-info-segment .display-info-fourth-content .profile-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.display-info-segment .display-info-fourth-content .profile-link .profile--link a:link, .display-info-segment .display-info-fourth-content .profile-link .profile--link a:visited {
+  color: #364fc7;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+.display-info-segment .display-info-fourth-content .builder-copyRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.9rem;
+}
+.display-info-segment .display-info-fourth-content .builder-copyRight .copyRight {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #364fc7;
+}
+
+.follower, .repo, .following {
+  opacity: 0.4;
+}
+
+.followers, .repos, .followings {
+  text-align: center;
+}
+
+.darkIt {
+  box-shadow: 0 0 0 0.2rem #050814;
+  background: transparent;
 }/*# sourceMappingURL=main.css.map */
