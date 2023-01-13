@@ -23,18 +23,21 @@ const searchBtn = document.querySelector('.search-btn')
 searchBtn.addEventListener('click', addInfoDetails)
 // 
 // 
-function addInfoDetails() {
+function addInfoDetails(e) {
   //
   // VARIABLES
   // 
+  e.preventDefault();
   const searchInput = document.querySelector('.search-input').value.trim();
   //
   // PROGRAMS
   if (searchInput === '') {
     alert('Enter username')
-    document.querySelector('.search-input').value = '';
   } else {
-    console.log(searchInput)
+    getGitUserDate()
     document.querySelector('.search-input').value = '';
   }
+}
+async function getGitUserDate() {
+  const response = await fetch('https://api.github.com/users')
 }
