@@ -43,11 +43,10 @@ function addInfoDetails(e) {
 async function getGitUserData(username) {
   //
   //
-  console.log(username)
   const displayInfoName = document.querySelector('.display-info-name')
   // 
   // 
   const response = await fetch(`https://api.github.com/users/${username}`);
   const data = await response.json();
-  console.log(data)
+  displayInfoName.textContent = data.login;
 }
