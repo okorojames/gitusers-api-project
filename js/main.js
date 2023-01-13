@@ -34,10 +34,20 @@ function addInfoDetails(e) {
   if (searchInput === '') {
     alert('Enter username')
   } else {
-    getGitUserDate()
+    getGitUserData(searchInput)
     document.querySelector('.search-input').value = '';
   }
 }
-async function getGitUserDate() {
-  const response = await fetch('https://api.github.com/users')
+
+
+async function getGitUserData(username) {
+  //
+  //
+  console.log(username)
+  const displayInfoName = document.querySelector('.display-info-name')
+  // 
+  // 
+  const response = await fetch(`https://api.github.com/users/${username}`);
+  const data = await response.json();
+  console.log(data)
 }
