@@ -63,7 +63,7 @@ async function getGitUserData(username) {
           <div class="display-info-upper-info">
             <h4 class="display-info-name">${data.name}</h4>
             <h6 class="display-info-username">${data.login}</h6>
-            <p class="display-info-date">Joined <span class="joined-date">${data.created_at}</span></p>
+            <p class="display-info-date">Joined <span class="joined-date">${new Date(data.created_at).toLocaleString()}</span></p>
           </div>
         </div>
         <!---------->
