@@ -49,7 +49,7 @@ async function getGitUserData(username) {
   const contentContainer = document.querySelector('.container')
   const response = await fetch(`https://api.github.com/users/${username}`);
   const data = await response.json();
-  contentContainer += `
+  contentContainer.innerHTML += `
   
    <div class="display-info-segment">
         <!---------->
