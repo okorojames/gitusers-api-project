@@ -57,7 +57,7 @@ async function getGitUserData(username) {
         <div class="display-info-first-content">
           <!--  -->
           <div class="display-info-profile">
-            ${data.avatar_url}
+            <img src="${data.avatar_url}" class="display-info-image">
           </div>
           <!--  -->
           <div class="display-info-upper-info">
