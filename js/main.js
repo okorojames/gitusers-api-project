@@ -44,6 +44,12 @@ async function getGitUserData(username) {
   //
   //
   const displayInfoName = document.querySelector('.display-info-name')
+  const DateOptions = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }
   //
   // 
   const contentContainer = document.querySelector('.container')
@@ -63,7 +69,8 @@ async function getGitUserData(username) {
           <div class="display-info-upper-info">
             <h4 class="display-info-name">${data.name}</h4>
             <h6 class="display-info-username">${data.login}</h6>
-            <p class="display-info-date">Joined <span class="joined-date">${new Date(data.created_at).toLocaleString()}</span></p>
+            <p class="display-info-date">Joined <span class="joined-date">
+            ${new Date(data.created_at).toLocaleString('en-US', DateOptions)}</span></p>
           </div>
         </div>
         <!---------->
