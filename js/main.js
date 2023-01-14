@@ -61,6 +61,7 @@ async function getGitUserData(username) {
   // 
 
   const response = await fetch(`https://api.github.com/users/${username}`);
+  console.log(response)
   const data = await response.json();
   contentContainer.innerHTML += `
   
