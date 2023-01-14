@@ -111,7 +111,7 @@ async function getGitUserData(username) {
           <!--  -->
           <div class="builder-copyRight">
             <p class="builder">Builder:</p>
-            <p class="copyRight">JamexTech &copy; <script>document.write(new Date().getFullYear())</script></p>
+            <p class="copyRight">JamexTech &copy; ${new Date().getFullYear()}</p>
           </div>
         </div>
       </div>

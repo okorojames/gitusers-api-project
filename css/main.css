@@ -24,9 +24,7 @@ body {
 }
 
 .app-wrap {
-  background: #050814;
-  box-shadow: 0 0.2rem 1rem #10183c;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   border-radius: 1rem;
   margin-top: 3rem;
@@ -38,6 +36,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5rem;
+  border-bottom: 0.35rem solid #10183c;
+  padding: 0.8rem 1.6rem;
 }
 .app-nav .light--mode {
   fill: #edf2ff;
@@ -53,7 +53,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
 }
 .container .search-segment {
   display: flex;
@@ -79,10 +79,7 @@ body {
   background: transparent;
   outline: none;
   border: none;
-  font-size: 1.6rem;
-  color: #edf2ff;
-}
-.container .search-segment form .search-input::-webkit-input-placeholder {
+  font-size: 1.4rem;
   color: #edf2ff;
 }
 .container .search-segment .search-btn {

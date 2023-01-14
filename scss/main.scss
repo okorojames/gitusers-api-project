@@ -27,9 +27,7 @@ body{
   padding: 5rem 0;
 }
 .app-wrap{
-  background: $dark-two;
-  box-shadow: 0 .2rem 1rem $dark-three;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   border-radius: 1rem;
   margin-top: 3rem;
@@ -40,6 +38,8 @@ body{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5rem;
+  border-bottom: .35rem solid $dark-three;
+  padding: .8rem 1.6rem;
   & .light--mode{
   fill: $pre-primary;
   cursor: pointer;
@@ -54,7 +54,7 @@ body{
 }
 .container{
   margin: 0 auto;
-  width:70%;
+  width:100%;
   & .search-segment{
     display: flex;
     justify-content: space-between;
@@ -77,12 +77,9 @@ body{
       background: transparent;
       outline: none;
       border: none;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       color: $pre-primary;
     }
-          & .search-input::-webkit-input-placeholder{
-        color: $pre-primary;
-      }
     }
     & .search-btn{
       padding: 1rem 1.8rem;
