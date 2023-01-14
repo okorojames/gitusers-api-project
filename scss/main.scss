@@ -246,4 +246,10 @@ body{
     flex-direction: column;
     gap: 1.2rem;
   }
+
+  form{
+    & .search-input{
+      padding-right: 3rem;
+    }
+  }
 }
