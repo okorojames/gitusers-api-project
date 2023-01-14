@@ -2,19 +2,26 @@ const body = document.querySelector('body')
 const lightMode = document.querySelector('.light--mode')
 const darkMode = document.querySelector('.dark--mode')
 const appWrap = document.querySelector('.app-wrap')
+const contentContainer = document.querySelector('.container')
+const appNavH4 = document.querySelector('.app-nav-h4')
+const searchInputBox = document.querySelector('.search-input-box')
 // LIGHT MODE
 lightMode.addEventListener('click', function () {
   lightMode.style.display = 'none';
   darkMode.style.display = 'block';
   body.style.background = '#edf2ff';
-  appWrap.classList.add('darkIt')
+  appNavH4.style.color = '#050814';
+  darkMode.style.fill = '#050814';
+  searchInputBox.style.color = "#050814";
+
 })
 // DARK MODE
 darkMode.addEventListener('click', function () {
   lightMode.style.display = 'block';
   darkMode.style.display = 'none';
-  body.style.background = '#050814'
-  appWrap.classList.remove('darkIt')
+  body.style.background = '#050814';
+  appNavH4.style.color = '#edf2ff';
+  searchInputBox.style.color = "#edf2ff"
 })
 //
 // working on the functions
@@ -52,7 +59,7 @@ async function getGitUserData(username) {
   }
   //
   // 
-  const contentContainer = document.querySelector('.container')
+
   const response = await fetch(`https://api.github.com/users/${username}`);
   const data = await response.json();
   contentContainer.innerHTML += `

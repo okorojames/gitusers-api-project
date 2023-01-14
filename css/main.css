@@ -105,7 +105,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  background: rgba(16, 24, 60, 0.8);
+  background: rgba(16, 24, 60, 0.9);
   border-radius: 1.2rem;
   padding: 1.3rem 4rem;
 }
@@ -192,11 +192,6 @@ body {
   text-align: center;
 }
 
-.darkIt {
-  box-shadow: 0 0 0 0.3rem #0b1028;
-  background: rgba(16, 24, 60, 0.6);
-}
-
 .developerName a:link, .developerName a:visited {
   text-decoration: underline;
   color: #edf2ff;
@@ -241,6 +236,6 @@ body {
     gap: 1.2rem;
   }
   form .search-input {
-    padding-right: 3rem;
+    font-size: 1.18rem !important;
   }
 }/*# sourceMappingURL=main.css.map */

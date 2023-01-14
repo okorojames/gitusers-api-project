@@ -108,7 +108,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  background: rgba($dark-three, 0.8);
+  background: rgba($dark-three, 0.9);
   border-radius: 1.2rem;
   padding: 1.3rem 4rem;
   & .display-info-first-content{
@@ -198,10 +198,6 @@ body{
 .followers,.repos,.followings{
   text-align: center;
 }
-.darkIt{
-  box-shadow: 0 0 0 .3rem $dark-one;
-  background: rgba($dark-three, .6);
-}
 .developerName a:link,.developerName a:visited{
   text-decoration: underline;
   color: $pre-primary;
@@ -249,7 +245,7 @@ body{
 
   form{
     & .search-input{
-      padding-right: 3rem;
+      font-size: 1.18rem !important;
     }
   }
 }
