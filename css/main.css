@@ -72,6 +72,7 @@ body {
 }
 .container .search-segment form {
   width: 100%;
+  display: flex;
 }
 .container .search-segment form .search-input {
   padding: 0.8rem 0.5rem;
@@ -196,6 +197,23 @@ body {
   background: rgba(16, 24, 60, 0.6);
 }
 
+.developerName a:link, .developerName a:visited {
+  text-decoration: underline;
+  color: #edf2ff;
+}
+
+.secure-copyRight {
+  text-align: center;
+}
+
+.last-lastContent {
+  margin-top: -3rem;
+}
+
+.last-lastContent a {
+  color: #364fc7;
+}
+
 @media screen and (max-width: 768px) {
   .display-info-first-content {
     flex-direction: column;
@@ -207,9 +225,19 @@ body {
   .display-info-profile-about {
     text-align: center;
   }
+  .display-info-fourth-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 576px) {
   .app-wrap {
     width: 95%;
+  }
+}
+@media screen and (max-width: 476px) {
+  .display-info-third-content {
+    flex-direction: column;
+    gap: 1.2rem;
   }
 }/*# sourceMappingURL=main.css.map */

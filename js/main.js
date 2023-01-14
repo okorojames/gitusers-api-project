@@ -19,8 +19,8 @@ darkMode.addEventListener('click', function () {
 //
 // working on the functions
 // 
-const searchBtn = document.querySelector('.search-btn')
-searchBtn.addEventListener('click', addInfoDetails)
+const searchBtn = document.querySelector('form')
+searchBtn.addEventListener('submit', addInfoDetails)
 // 
 // 
 function addInfoDetails(e) {
@@ -69,7 +69,7 @@ async function getGitUserData(username) {
           <div class="display-info-upper-info">
             <h4 class="display-info-name">${data.name}</h4>
             <h6 class="display-info-username">${data.login}</h6>
-            <p class="display-info-date">Joined <span class="joined-date">
+            <p class="display-info-date">Joined: <span class="joined-date">
             ${new Date(data.created_at).toLocaleString('en-US', DateOptions)}</span></p>
           </div>
         </div>
@@ -110,10 +110,11 @@ async function getGitUserData(username) {
           </div>
           <!--  -->
           <div class="builder-copyRight">
-            <p class="builder">Builder:</p>
-            <p class="copyRight">JamexTech &copy; ${new Date().getFullYear()}</p>
+            <p class="builder">Developer:</p>
+            <p class="copyRight"> <span class="developerName"><a  href="https://www.github.com/okorojames">JamexTech</a></span> &copy; ${new Date().getFullYear()}</p>
           </div>
         </div>
+        <div class="last-lastContent"><p class="secure-copyRight"><a  href="https://www.github.com/okorojames">JamexTech</a></p></div>
       </div>
   
   `
