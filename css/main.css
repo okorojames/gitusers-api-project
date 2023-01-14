@@ -24,7 +24,7 @@ body {
 }
 
 .app-wrap {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   border-radius: 1rem;
   margin-top: 3rem;
@@ -194,4 +194,22 @@ body {
 .darkIt {
   box-shadow: 0 0 0 0.3rem #0b1028;
   background: rgba(16, 24, 60, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .display-info-first-content {
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+  .display-info-first-content .display-info-upper-info {
+    align-items: center;
+  }
+  .display-info-profile-about {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .app-wrap {
+    width: 95%;
+  }
 }/*# sourceMappingURL=main.css.map */
