@@ -62,8 +62,9 @@ async function getGitUserData(username) {
 
   const response = await fetch(`https://api.github.com/users/${username}`);
   console.log(response)
-  const data = await response.json();
-  contentContainer.innerHTML += `
+  if (response.ok) {
+    const data = await response.json();
+    contentContainer.innerHTML += `
   
    <div class="display-info-segment">
         <!---------->
@@ -126,4 +127,13 @@ async function getGitUserData(username) {
       </div>
   
   `
+  }
+
+  if (!response.ok) {
+    contentContainer.innerHTML += `
+
+    <h2>User Name not found</h2>
+  
+  `
+  }
 }
