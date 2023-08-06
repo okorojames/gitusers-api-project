@@ -5,6 +5,7 @@ const appWrap = document.querySelector('.app-wrap')
 const contentContainer = document.querySelector('.container')
 const appNavH4 = document.querySelector('.app-nav-h4')
 const searchInputBox = document.querySelector('.search-input-box')
+const _myForm = document.querySelector('.my-search-form')
 // LIGHT MODE
 lightMode.addEventListener('click', function () {
   lightMode.style.display = 'none';
@@ -42,7 +43,7 @@ function addInfoDetails(e) {
     alert('Enter username')
   } else {
     getGitUserData(searchInput)
-    document.querySelector('.search-input').value = '';
+    _myForm.reset()
   }
 }
 
